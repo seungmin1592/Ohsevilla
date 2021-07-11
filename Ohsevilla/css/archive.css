@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+
+.wrap {
+	background:#000;
+}
+.container {
+	width:100%;
+	height:100%;
+}
+.container > section {
+	cursor: pointer;
+}
+
+.vogue_pop_up {
+	float:left;
+	width:50%;
+}
+.archive_image {
+	width:100%;
+	height:80%;
+}
+.title {
+	display:inline-block;
+	width:100%;
+	height:60px;
+	line-height: 40px;
+	font-size:13px;
+	padding-left:30px;
+	font-weight: bold;
+}
+
+.seoul_pop_up {
+	float:right;
+	width:50%;
+}
+
+.hongkong_pop_up {
+	float:right;
+	width:50%;
+}
+
+.osaka_pop_up {
+	float:left;
+	width:50%;
+}
+
+.paris_exhibition {
+	width:50%;
+}
+
+.archive_image:hover {
+	filter: grayscale(80%);
+}
