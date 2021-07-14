@@ -1,3 +1,5 @@
+'use strict';
+
 $(function () {
   //메뉴 이동
   $('.logo').click(function () {

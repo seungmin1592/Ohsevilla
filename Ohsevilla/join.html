@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+     <title>Ohsevilla</title>
+     <meta charset="utf-8">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/join.css">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+     <script src="http://code.jquery.com/jquery-latest.js"></script>
+     <script src="js/script.js"></script>
+     <script src="js/join.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <h1 class="logo">
+                <img src="image2/logo.png" alt="logo">
+            </h1>
+            <nav class="menu">
+                <ul class="nav">
+                    <li><a href="#">SHOP</a></li>
+                    <li class="clothing">
+                        <a href="#">CLOTHING</a>
+                        <div class="clothing_menu">
+                                <ul>
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">OUTER</a></li>
+                                    <li><a href="#">TOP</a></li>
+                                    <li><a href="#">BOTTOM</a></li>
+                                    <li><a href="#">ACC</a></li>
+                                    <li><a href="#">ETC</a></li>
+                                </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">ARCHIVE</a></li>
+                    <li><a href="#none">STOCKIST</a></li>
+                </ul>
+            </nav>
+            <!--menu-->
+            <div class="sub_menu">
+                <a href="login.html">LOGIN</a>
+                <a href="#">CART (0)</a>
+            </div><!-- sub_menu-->
+        </header><!-- header -->
+
+        <div class="container">
+            <div class="join_section">
+                <h1 class="join_title">JOIN MEMBER</h1>
+                <form action="" id="join">
+                    <label for="id">
+                        아이디<span>*</span>
+                        <input type="text" name="id" id="id" placeholder="아이디" required>
+                        
+                    </label>
+                    <label for="password">
+                        비밀번호<span>*</span>
+                        <input type="password" name="password" id="password" placeholder="비밀번호" required>
+                    </label>
+                    <label for="password_ck">
+                        비밀번호 확인<span>*</span>
+                        <input type="password" name="password_ck" id="password_ck" placeholder="비밀번호 재입력" required>
+                    </label>
+                    <label for="name">
+                        이름<span>*</span>
+                        <input type="text" name="name" id="name" placeholder="이름" required>
+                    </label>
+                    <label for="email">
+                        이메일<span>*</span>
+                        <input type="text" name="email" id="email" placeholder="이메일" required>
+                    </label>
+                    <label for="phone">
+                        휴대폰 번호<span>*</span>
+                        <input type="text" name="phone" id="phone" placeholder="휴대폰 번호" required>
+                    </label>
+                    <label for="sample6_postcode">
+                        주소<span>*</span>
+                        <input type="text" name="phone" id="phone" placeholder="주소" required>
+                    </label>
+
+                    <div class="agree_section">
+                        <h3>약관동의</h3>
+                        <div class="check_box">
+                            <input type="checkbox" name="check_all" id="check_all">
+                            <label for="check_all">전체 동의</label>
+                        </div>
+                        <div class="check_box">
+                            <input type="checkbox" name="check_1" id="check_1">
+                            <label for="check_1">이용약관 동의<span class="red">[필수]</span></label>
+                            <div class="more_btn"></div>
+                            <div class="agree_content">
+                                이용약관 내용
+                            </div>
+                        </div>
+                        <div class="check_box">
+                            <input type="checkbox" name="check_2" id="check_2">
+                            <label for="check_2">개인정보수집 동의<span class="red">[필수]</span></label>
+                            <div class="more_btn"></div>
+                            <div class="agree_content">
+                                개인정보수집
+                            </div>
+                        </div>
+                        <div class="check_box">
+                            <input type="checkbox" name="check_3" id="check_3">
+                            <label for="check_3">이벤트/마케팅 수신 동의<span>[선택]</span></label>
+                            <div class="more_btn"></div>
+                            <div class="agree_content">
+                                이벤트/마케팅 수신 동의
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="join_btn">회원가입</button>
+                </form>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <span class="copy">&copy; 2021 Ohsevilla</span>
+            <ul class="foot_menu">
+                 <li><a href="#none">LEGAL</a></li>
+                 <li><a href="#none">HELP</a></li>
+                 <li><a href="#none">ORDER TRACKING</a></li>
+            </ul>
+            <div class="foot_section">
+                 <p>PEACEMINUSONE. CEO.MS.KWON. 2F.17-6.DOSAN-DAERO 90-GIL, GANGNAM-GU, SEOUL, REPUBLIC OF KOREA.<br>
+                      BUSINESS NO 131-88-00559 [CHECK] E-COMMERCE REGISTRATION NO.2016-서울강남-202605</p>
+            </div>
+            <div class="SNS">
+                 <span>INSTAGRAM</span>
+            </div>
+       </footer><!-- footer-->
+    </div>
+
+   
+</body>
+</html>
