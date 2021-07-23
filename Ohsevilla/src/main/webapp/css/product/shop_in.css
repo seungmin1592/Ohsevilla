@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+.header {
+	position:fixed;
+	background:#000;
+}
+.section {
+	width:100%;
+	height:100%;
+	background:#000;
+	float:left;
+}
+.shop_in_title {
+	width:40%;
+	height:100%;
+	float:left;
+	position: fixed;
+	top:10%;
+	left:0%;
+	font-weight: bold;
+	font-size:11px;
+}
+.shop_title_in {
+	position:relative;
+	border-bottom:1px solid #999;
+	padding-left:20px;
+}
+
+.shop_title_in p {
+	padding:10px 0;
+}
+.shop_title_in span {
+	position:absolute;
+	top: 10px;
+  	right: 38%;
+}
+.buy {
+	padding:10px 20px;
+	text-align:right;
+	border-bottom:1px solid #999;
+}
+.buy span {
+	cursor:pointer;
+}
+.infor {
+	padding:10px 20px;
+	border-bottom:1px solid #999;
+}
+.infor span {
+	cursor:pointer;
+}
+
+.more_infor {
+	padding:10px 20px;
+}
+
+.waring {
+	display:inline-block;
+	padding-bottom:20px;
+	color:red;
+}
+.shop {
+	width:60%;
+	height:100%;
+	float:right;
+}
+.shop_in_img {
+	width:100%;
+}
+.shop_in_img img {
+	width:100%;
+	height:98%;
+	padding:1% 0;
+}
+.footer {
+	clear:both;
+}
