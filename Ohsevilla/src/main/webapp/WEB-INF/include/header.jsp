@@ -5,7 +5,7 @@
 <div class="wrap">
      <header class="header">
           <h1 class="logo">
-               <img src="image/logo.png" alt="logo">
+               <img src="<%= request.getContextPath()%>/image/logo.png" alt="logo">
           </h1>
           <nav class="menu">
                <ul class="nav">
@@ -29,7 +29,7 @@
           </nav>
           <!--menu-->
           <div class="sub_menu">
-               <a href="login.html">LOGIN</a>
+               <a href="<%= request.getContextPath()%>/member/login.jsp">LOGIN</a>
                <a href="#">CART (0)</a>
           </div><!-- sub_menu-->
 
