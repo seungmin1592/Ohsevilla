@@ -5,7 +5,9 @@
 <div class="wrap">
      <header class="header">
           <h1 class="logo">
-               <img src="<%= request.getContextPath()%>/image/logo.png" alt="logo">
+          		<a href="<%= request.getContextPath()%>/index.jsp">
+               		<img src="<%= request.getContextPath()%>/image/logo.png" alt="logo">
+               	</a>
           </h1>
           <nav class="menu">
                <ul class="nav">

@@ -68,6 +68,11 @@ form label input:focus {
   float: left;
   cursor: pointer;
 }
+.logo > a {
+	width:100%;
+	height:100%;
+	display:block;	
+}
 .logo img {
   width: 100%;
   height: 100%;

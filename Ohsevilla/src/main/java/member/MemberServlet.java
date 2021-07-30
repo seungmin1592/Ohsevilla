@@ -42,7 +42,7 @@ public class MemberServlet extends HttpServlet {
 		MemberDAO memberDAO = MemberDAO.getInstance();
 		int resultCnt = memberDAO.insertMember(memberDTO);
 		
-		response.sendRedirect("login.jsp");
+		response.sendRedirect(request.getContextPath() + "/member/login.jsp");
 	}
 	
 	

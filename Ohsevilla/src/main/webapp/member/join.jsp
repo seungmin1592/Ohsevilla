@@ -73,7 +73,6 @@
 	             <label for="id">
 	                 아이디<span>*</span>
 	                 <input type="text" name="id" id="id" placeholder="아이디" required>
-	                 
 	             </label>
 	             <label for="password">
 	                 비밀번호<span>*</span>

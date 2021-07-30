@@ -71,6 +71,7 @@
 }
 .agree_section .check_box input[type="checkbox"] {
   display: inline-block;
+  vertical-align:middle;
 }
 
 .agree_section .check_box label {
