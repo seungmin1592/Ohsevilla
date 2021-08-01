@@ -69,7 +69,7 @@
 	 <div class="container">
 	     <div class="join_section">
 	         <h1 class="join_title">JOIN MEMBER</h1>
-	         <form action="<%= request.getContextPath()%>/member/register.do" id="join" method="post">
+	         <form action="${root}/member/registerOk.do" id="join" method="post">
 	             <label for="id">
 	                 아이디<span>*</span>
 	                 <input type="text" name="id" id="id" placeholder="아이디" required>

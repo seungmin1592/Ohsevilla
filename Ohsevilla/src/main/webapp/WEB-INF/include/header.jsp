@@ -1,7 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-    
+<c:set var = "root" value = "${pageContext.request.contextPath}"/>
+
 <div class="wrap">
      <header class="header">
           <h1 class="logo">
@@ -31,7 +33,7 @@
           </nav>
           <!--menu-->
           <div class="sub_menu">
-               <a href="<%= request.getContextPath()%>/member/login.jsp">LOGIN</a>
+               <a href="${root}/member/login.do">LOGIN</a>
                <a href="#">CART (0)</a>
           </div><!-- sub_menu-->
 

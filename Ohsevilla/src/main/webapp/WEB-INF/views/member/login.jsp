@@ -19,7 +19,7 @@
 	        <div class="login_logo">
 	            <img src="<%= request.getContextPath()%>/image/logo.png" alt="logo">
 	        </div>
-	        <form action="" id="login">
+	        <form action="${root}/member/loginOk.do" id="login" method="post">
 	            <label for="id">
 	                <input type="text" name="id" id="id" placeholder="아이디를 입력해주세요">
 	            </label>
@@ -43,7 +43,7 @@
 	                    </a>
 	                </li>
 	                <li>
-	                    <a href="<%= request.getContextPath()%>/member/join.jsp">
+	                    <a href="${root}/member/register.do">
 	                        회원가입
 	                    </a>
 	                </li>

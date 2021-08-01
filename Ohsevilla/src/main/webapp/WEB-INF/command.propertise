@@ -1,5 +1,6 @@
 # member
 /member/register.do=member.command.RegisterCommand
+/member/registerOk.do=member.command.RegisterOkCommand
 /member/idCheck.do=member.command.IdCheckCommand
 /member/login.do=member.command.LoginCommand
 /member/loginOk.do=member.command.LoginCommandOk
@@ -9,3 +10,5 @@
 /member/updateOk.do=member.command.UpdateOkCommand
 /member/delete.do=member.command.DeleteCommand
 /member/deleteOk.do=member.command.DeleteOkCommand
+
+
