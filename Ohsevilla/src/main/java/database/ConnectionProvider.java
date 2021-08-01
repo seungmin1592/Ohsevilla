@@ -14,11 +14,9 @@ public class ConnectionProvider {
 			String id = "ohsevilla";
 			String pw = "1234";
 			conn = DriverManager.getConnection(url, id, pw);
-			System.out.println("연결 성공");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			System.out.println("연결 실패");
 		}
 		
 		return conn;
