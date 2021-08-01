@@ -11,12 +11,10 @@ import java.util.Properties;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.coyote.http11.filters.BufferedInputFilter;
 
 import command.Command;
 
@@ -62,12 +60,13 @@ public class FrontController extends HttpServlet {
 			String command = (String)itr.next();
 			String className = prop.getProperty(command);
 			
-			Class<?> handlerClass;
 			try {
-				handlerClass = Class.forName(className);
-				Object handlerIntstace = handlerClass.getDeclaredConstructor().newInstance();
 				
-				commandMap.put(command, handlerIntstace);
+				Class handlerClass = Class.forName(className);
+				Command commandObj = (Command) handlerClass.newInstance();
+				
+				commandMap.put(command, commandObj);
+				
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -76,15 +75,14 @@ public class FrontController extends HttpServlet {
 
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		doProcess(request, response);
 	}
 
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+		doProcess(request, response);
 	}
+	
 	
 	private void doProcess(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String cmd = request.getServletPath();

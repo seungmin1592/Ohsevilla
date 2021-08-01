@@ -82,5 +82,41 @@ public class MemberDAO {
 		return resultCnt;
 	}
 	
+	// 로그인
+	public int loginCheck(String id, String password) {
+		
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		int check = 0;
+		
+		try {
+
+		    String sql = "select * from member where id=?";
+			
+		    conn = ConnectionProvider.getConnection();
+		    pstmt = conn.prepareStatement(sql);
+		    pstmt.setString(1, id);
+		    rs = pstmt.executeQuery();
+		    
+		    if(rs.next()) {
+		    	if(rs.getString("password").equals(password)) {
+		    		check = 1;
+		    	} else {
+		    		check = 0;
+		    	}
+		    }
+		}catch (Exception e) {
+		    e.printStackTrace();
+		}finally {
+		    JdbcUtil.close(rs);
+		    JdbcUtil.close(conn);
+		    JdbcUtil.close(pstmt);
+		}
+		
+		return check;
+	    }
+
+	
 	
 }
