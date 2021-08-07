@@ -99,6 +99,11 @@ public class MemberDTO {
 //	}
 	
 	
+	public LoginSessionDTO toLoginInfo() {
+		return new LoginSessionDTO(this.id, this.password, this.name, this.memberphoto);
+	}
+	
+	
 	
 	
 }

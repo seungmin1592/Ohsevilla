@@ -3,9 +3,11 @@ package member.command;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import command.Command;
 import member.MemberDAO;
+import member.MemberDTO;
 
 public class LoginOkCommand implements Command {
 
@@ -15,11 +17,13 @@ public class LoginOkCommand implements Command {
 		String id = request.getParameter("id");
 		String pw = request.getParameter("password");
 		
-		boolean loginCk = false;
+		MemberDTO member = MemberDAO.getInstance().loginCheck(id, pw);
 		
-		int check = MemberDAO.getInstance().loginCheck(id, pw);
+		if(member != null) {
+			HttpSession session = request.getSession();
+			session.setAttribute(pw, session);
+		}
 		
-		request.setAttribute("check", check);
 		
 		return "/WEB-INF/views/member/LoginOk.jsp";
 	}
