@@ -102,9 +102,14 @@ public class MemberDAO {
 		    if(rs.next()) {
 		    	if(rs.getString("password").equals(password)) {
 		    		check = 1;
+		    		System.out.println("ok");
 		    	} else {
 		    		check = 0;
+		    		System.out.println("비밀번호 x");
 		    	}
+		    } else { 
+		    	check = 0;
+		    	System.out.println("아이디 x");
 		    }
 		}catch (Exception e) {
 		    e.printStackTrace();
@@ -115,7 +120,7 @@ public class MemberDAO {
 		}
 		
 		return check;
-	    }
+    }
 
 	
 	

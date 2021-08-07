@@ -11,7 +11,6 @@ public class RegisterOkCommand implements Command {
 
 	@Override
 	public String proRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		request.setCharacterEncoding("UTF-8");
 		
 		MemberDTO memberDTO = new MemberDTO();
 		memberDTO.setId(request.getParameter("id"));
