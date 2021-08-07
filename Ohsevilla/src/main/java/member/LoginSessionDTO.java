@@ -29,6 +29,11 @@ public class LoginSessionDTO {
 	public void setName(String name) {
 		this.name = name;
 	}
+
+	@Override
+	public String toString() {
+		return "LoginSessionDTO [id=" + id + ", password=" + password + ", name=" + name + "]";
+	}
 	
 	
 }

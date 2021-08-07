@@ -1,11 +1,13 @@
 package member.command;
 
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import command.Command;
+import member.LoginSessionDTO;
 import member.MemberDAO;
 import member.MemberDTO;
 
@@ -19,13 +21,27 @@ public class LoginOkCommand implements Command {
 		
 		MemberDTO member = MemberDAO.getInstance().loginCheck(id, pw);
 		
+		boolean loginCk = false;
+		
 		if(member != null) {
 			HttpSession session = request.getSession();
-			session.setAttribute(pw, session);
+			session.setAttribute("loginInfo", member.toLoginInfo());
+			loginCk = true;
+			LoginSessionDTO session1 = (LoginSessionDTO) session.getAttribute("loginInfo");
+			System.out.println(session1);
 		}
 		
 		
-		return "/WEB-INF/views/member/LoginOk.jsp";
+		System.out.println();
+		
+		String view = null;
+		if(loginCk) {
+			view = "/WEB-INF/index.jsp";
+		} else {
+			view = "/WEB-INF/views/member/loginFalse.jsp";
+		}
+		
+		return view;
 	}
 
 }

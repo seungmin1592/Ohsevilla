@@ -1,11 +1,13 @@
 # member
 /member/register.do=member.command.RegisterCommand
 /member/registerOk.do=member.command.RegisterOkCommand
-/member/idCheck.do=member.command.IdCheckCommand
 /member/login.do=member.command.LoginCommand
-/member/loginOk.do=member.command.LoginCommandOk
-/member/logout.do=member.command.LoginOutCommand
-/member/main.do=.member.command.mainCommand
+/member/loginOk.do=member.command.LoginOkCommand
+/member/logout.do=member.command.LogOutCommand
+/member/mypage.do=member.command.MyPageCommand
+
+/member/idCheck.do=member.command.IdCheckCommand
+/member/main.do=command.MainCommand
 /member/update.do=member.command.UpdateCommand
 /member/updateOk.do=member.command.UpdateOkCommand
 /member/delete.do=member.command.DeleteCommand

@@ -83,7 +83,7 @@ public class MemberDAO {
 	}
 	
 	// 로그인
-	public MemberDTO loginCheck(String id, String password) {
+	public MemberDTO loginCheck(String id, String pw) {
 		
 		MemberDTO member = null;
 		Connection conn = null;
@@ -100,11 +100,12 @@ public class MemberDAO {
 		    rs = pstmt.executeQuery();
 		    
 		    if(rs.next()) {
-		    	if(rs.getString("password").equals(password)) {
+		    	if(rs.getString("pw").equals(pw)) {
 		    		member = new MemberDTO();
 					member.setId(rs.getString("id"));
-					member.setPw(rs.getString("password"));
+					member.setPw(rs.getString("pw"));
 					member.setName(rs.getString("name"));
+					System.out.println("ㅇㅋㅇㅋ");
 		    	} else {
 		    		
 		    		System.out.println("비밀번호 x");

@@ -32,9 +32,18 @@
                </ul>
           </nav>
           <!--menu-->
-          <div class="sub_menu">
-               <a href="${root}/member/login.do">LOGIN</a>
-               <a href="#">CART (0)</a>
-          </div><!-- sub_menu-->
+          <c:if test="${loginInfo == null }">
+	          <div class="sub_menu logout">
+	               <a href="${root}/member/login.do">LOGIN</a>
+	               <a href="#">CART (0)</a>
+	          </div><!-- sub_menu-->
+          </c:if>
+          <c:if test="${loginInfo != null }">
+	          <div class="sub_menu login">
+	               <a href="${root}/member/mypage.do">${loginInfo.id}</a>
+	               <a href="${root}/member/logout.do">LOGOUT</a>
+	               <a href="#">CART (0)</a>
+	          </div><!-- sub_menu-->
+          </c:if>
 
      </header><!-- header -->
