@@ -1,14 +1,20 @@
-package command;
+package member.command;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class MainCommand implements Command {
+import command.Command;
+
+public class PWCheckCommand implements Command {
 
 	@Override
 	public String proRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		return "/WEB-INF/views/index.jsp";
+
+		String pw = request.getParameter("pw");
 		
+		
+		
+		return null;
 	}
 
 }

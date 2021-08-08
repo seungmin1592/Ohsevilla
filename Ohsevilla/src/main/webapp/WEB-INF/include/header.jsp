@@ -7,7 +7,7 @@
 <div class="wrap">
      <header class="header">
           <h1 class="logo">
-          		<a href="<%= request.getContextPath()%>/index.jsp">
+          		<a href="${root}/main.do">
                		<img src="<%= request.getContextPath()%>/image/logo.png" alt="logo">
                	</a>
           </h1>

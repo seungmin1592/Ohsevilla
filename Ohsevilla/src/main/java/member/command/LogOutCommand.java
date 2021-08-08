@@ -14,7 +14,7 @@ public class LogOutCommand implements Command {
 		HttpSession session = request.getSession();
 		session.invalidate();
 		
-		return "/WEB-INF/index.jsp";
+		return "/WEB-INF/views/index.jsp";
 	}
 
 }

@@ -36,7 +36,7 @@ public class LoginOkCommand implements Command {
 		
 		String view = null;
 		if(loginCk) {
-			view = "/WEB-INF/index.jsp";
+			view = "/WEB-INF/views/index.jsp";
 		} else {
 			view = "/WEB-INF/views/member/loginFalse.jsp";
 		}
