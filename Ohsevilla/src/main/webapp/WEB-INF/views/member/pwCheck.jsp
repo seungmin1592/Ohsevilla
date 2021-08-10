@@ -19,7 +19,7 @@
 	        <div class="section_logo">
 	            <img src="<%= request.getContextPath()%>/image/logo.png" alt="logo">
 	        </div>
-	        <form action="${root}/member/loginOk.do" method="post">
+	        <form action="${root}/member/pwChkOK.do" method="post">
 	            <label for="password">
 	                <input type="password" name="password" id="password" placeholder="비밀번호를 입력해주세요">
 	            </label>

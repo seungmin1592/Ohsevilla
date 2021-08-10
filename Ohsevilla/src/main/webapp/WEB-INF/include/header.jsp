@@ -32,15 +32,15 @@
                </ul>
           </nav>
           <!--menu-->
-          <c:if test="${loginInfo == null }">
+          <c:if test="${member == null }">
 	          <div class="sub_menu logout">
 	               <a href="${root}/member/login.do">LOGIN</a>
 	               <a href="#">CART (0)</a>
 	          </div><!-- sub_menu-->
           </c:if>
-          <c:if test="${loginInfo != null }">
+          <c:if test="${member != null }">
 	          <div class="sub_menu login">
-	               <a href="${root}/member/mypage.do">${loginInfo.id}</a>
+	               <a href="${root}/member/mypage.do">${member.id}</a>
 	               <a href="${root}/member/logout.do">LOGOUT</a>
 	               <a href="#">CART (0)</a>
 	          </div><!-- sub_menu-->

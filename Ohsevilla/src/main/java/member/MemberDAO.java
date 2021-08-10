@@ -18,7 +18,7 @@ public class MemberDAO {
 	}
 
 	
-	// 데이터 insert
+	// 회원 데이터 insert
 	public int insertMember(MemberDTO memberDTO) {
 		Connection conn = null;
 		PreparedStatement pstmt = null;
@@ -27,7 +27,7 @@ public class MemberDAO {
 		
 	
 		try {
-			String sql = "insert into member values (?,?,?,?,?,?)";
+			String sql = "insert into member values (?,?,?,?,?,?,?,?)";
 			
 			conn = ConnectionProvider.getConnection();
 			pstmt = conn.prepareStatement(sql);
@@ -37,7 +37,9 @@ public class MemberDAO {
 			pstmt.setString(3, memberDTO.getName());
 			pstmt.setString(4, memberDTO.getEmail());
 			pstmt.setString(5, memberDTO.getPhone());
-			pstmt.setString(6, (memberDTO.getAddress2() +','+ memberDTO.getAddress3()));
+			pstmt.setString(6, memberDTO.getAddress1());
+			pstmt.setString(7, memberDTO.getAddress2());
+			pstmt.setString(8, memberDTO.getAddress3());
 			
 			resultCnt = pstmt.executeUpdate();
 			
@@ -105,14 +107,12 @@ public class MemberDAO {
 					member.setId(rs.getString("id"));
 					member.setPw(rs.getString("pw"));
 					member.setName(rs.getString("name"));
-					System.out.println("ㅇㅋㅇㅋ");
-		    	} else {
-		    		
-		    		System.out.println("비밀번호 x");
+					member.setEmail(rs.getString("email"));
+					member.setPhone(rs.getString("phone"));
+					member.setAddress1(rs.getString("address1"));
+					member.setAddress2(rs.getString("address2"));
+					member.setAddress3(rs.getString("address3"));
 		    	}
-		    } else { 
-
-		    	System.out.println("아이디 x");
 		    }
 		}catch (Exception e) {
 		    e.printStackTrace();

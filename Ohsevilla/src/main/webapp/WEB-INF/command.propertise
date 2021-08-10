@@ -6,7 +6,8 @@
 /member/loginOk.do=member.command.LoginOkCommand
 /member/logout.do=member.command.LogOutCommand
 /member/mypage.do=member.command.MyPageCommand
-/member/pw_ck.do=member.command.PWCheckViewCommand
+/member/pwChk.do=member.command.PWCheckViewCommand
+/member/pwChkOK.do=member.command.PWCheckCommand
 
 /member/idCheck.do=member.command.IdCheckCommand
 /member/update.do=member.command.UpdateCommand

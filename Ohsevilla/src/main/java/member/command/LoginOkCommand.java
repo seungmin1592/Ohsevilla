@@ -25,10 +25,9 @@ public class LoginOkCommand implements Command {
 		
 		if(member != null) {
 			HttpSession session = request.getSession();
-			session.setAttribute("loginInfo", member.toLoginInfo());
+			session.setAttribute("member", member);
 			loginCk = true;
-			LoginSessionDTO session1 = (LoginSessionDTO) session.getAttribute("loginInfo");
-			System.out.println(session1);
+	
 		}
 		
 		

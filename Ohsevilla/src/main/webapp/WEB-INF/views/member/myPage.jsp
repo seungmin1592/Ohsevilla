@@ -18,10 +18,10 @@
             <div class="mypage_info">
                 <h3 class="my_id_Info">
                     안녕하세요<br>
-                    ${loginInfo.name}님
+                    ${member.name}님
                 </h3>
-                <h5>${loginInfo.id}</h5>
-                <a href="${root}/member/pw_ck.do">회원 정보 수정</a>
+                <h5>${member.id}</h5>
+                <a href="${root}/member/pwChk.do">회원 정보 수정</a>
             </div>
             
             <h2 class="order_section_tit">주문 내역</h2>

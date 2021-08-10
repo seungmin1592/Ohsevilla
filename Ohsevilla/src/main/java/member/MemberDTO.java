@@ -102,6 +102,12 @@ public class MemberDTO {
 	public LoginSessionDTO toLoginInfo() {
 		return new LoginSessionDTO(this.id, this.pw, this.name);
 	}
+
+	@Override
+	public String toString() {
+		return "MemberDTO [id=" + id + ", pw=" + pw + ", name=" + name + ", email=" + email + ", phone=" + phone
+				+ ", address1=" + address1 + ", address2=" + address2 + ", address3=" + address3 + "]";
+	}
 	
 	
 	
