@@ -124,6 +124,42 @@ public class MemberDAO {
 		
 		return member;
     }
+	
+	// 회원정보수정
+	public int editMember(MemberDTO member) {
+		
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		
+		int resultCnt = 0;
+		
+		try {
+			String sql = "update member set pw = ? , name = ?, email = ?, phone = ?, address1 = ?, address2 = ?, address3 = ? where id = ?";
+			conn = ConnectionProvider.getConnection();
+			pstmt = conn.prepareStatement(sql);
+			
+			pstmt.setString(1, member.getPw());
+			pstmt.setString(2, member.getName());
+			pstmt.setString(3, member.getEmail());
+			pstmt.setString(4, member.getPhone());
+			pstmt.setString(5, member.getAddress1());
+			pstmt.setString(6, member.getAddress2());
+			pstmt.setString(7, member.getAddress3());
+			pstmt.setString(8, member.getId());
+			
+			resultCnt = pstmt.executeUpdate();
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			JdbcUtil.close(pstmt);
+			JdbcUtil.close(conn);
+		}
+		
+		
+		
+		return resultCnt;
+	}
 
 	
 	

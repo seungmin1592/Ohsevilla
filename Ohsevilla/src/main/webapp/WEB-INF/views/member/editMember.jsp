@@ -69,7 +69,7 @@
 	<div class="container">
      	<div class="edit_section">
             <h1 class="edit_title">EDIT INFORMATION</h1>
-            	<form action="" id="edit" method="post">
+            	<form action="${root}/member/editMemberOk.do" id="edit" method="post">
 	                <label for="id">
 	                    아이디<span>*</span>
 	                    <input type="text" name="id" id="id" value="${member.id}" readonly>
@@ -97,10 +97,10 @@
 	                <label for="sample6_postcode">
 	                    주소<span>*</span>
 	                   	<div id="address_div">
-		                    <input type="text" id="sample6_postcode"  value="${member.address1}">
+		                    <input type="text" id="sample6_postcode"  name="address1" value="${member.address1}">
 		                    <input type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기"><br>
-		                    <input type="text" id="sample6_address"  value="${member.address2}"><br>
-		                    <input type="text" id="sample6_detailAddress"  value="${member.address3}">
+		                    <input type="text" id="sample6_address"  name="address2" value="${member.address2}"><br>
+		                    <input type="text" id="sample6_detailAddress" name="address3" value="${member.address3}">
 	                    </div>
 	                </label>
 	                <button type="submit" class="edit_btn">회원 정보 수정</button>

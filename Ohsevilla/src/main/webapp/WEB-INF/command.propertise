@@ -8,10 +8,12 @@
 /member/mypage.do=member.command.MyPageCommand
 /member/pwChk.do=member.command.PWCheckViewCommand
 /member/pwChkOK.do=member.command.PWCheckCommand
+/member/editMember.do=member.command.EditMemberCommand
+/member/editMemberOk.do=member.command.EditMemberOkCommand
+
 
 /member/idCheck.do=member.command.IdCheckCommand
-/member/update.do=member.command.UpdateCommand
-/member/updateOk.do=member.command.UpdateOkCommand
+
 /member/delete.do=member.command.DeleteCommand
 /member/deleteOk.do=member.command.DeleteOkCommand
 

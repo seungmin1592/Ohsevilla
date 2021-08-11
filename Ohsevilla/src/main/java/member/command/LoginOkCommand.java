@@ -7,7 +7,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import command.Command;
-import member.LoginSessionDTO;
 import member.MemberDAO;
 import member.MemberDTO;
 
@@ -27,11 +26,7 @@ public class LoginOkCommand implements Command {
 			HttpSession session = request.getSession();
 			session.setAttribute("member", member);
 			loginCk = true;
-	
 		}
-		
-		
-		System.out.println();
 		
 		String view = null;
 		if(loginCk) {

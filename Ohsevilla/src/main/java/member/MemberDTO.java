@@ -99,10 +99,7 @@ public class MemberDTO {
 //	}
 	
 	
-	public LoginSessionDTO toLoginInfo() {
-		return new LoginSessionDTO(this.id, this.pw, this.name);
-	}
-
+	
 	@Override
 	public String toString() {
 		return "MemberDTO [id=" + id + ", pw=" + pw + ", name=" + name + ", email=" + email + ", phone=" + phone
