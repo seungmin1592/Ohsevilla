@@ -53,7 +53,7 @@ public class MemberDAO {
 		return resultCnt;
 	}
 	
-	
+	// id 중복체크
 	public int idCheck(String id) {
 		
 		Connection conn = null;
@@ -80,7 +80,8 @@ public class MemberDAO {
 			JdbcUtil.close(pstmt);
 			JdbcUtil.close(conn);
 		}
-
+		System.out.println(resultCnt);
+		System.out.println(id);
 		return resultCnt;
 	}
 	

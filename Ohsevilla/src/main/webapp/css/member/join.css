@@ -153,3 +153,13 @@
   cursor: pointer;
   margin: 100px 0;
 }
+
+.display_none {
+	display:none;
+}
+.color_blue {
+	color:blue;
+}
+.color_red {
+	color:red;
+}
