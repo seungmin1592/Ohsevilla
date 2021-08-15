@@ -1,0 +1,81 @@
+.notice {
+	max-width:1200px;
+	width:100%;
+	margin:0 auto 200px;
+}
+
+.bbs_logo {
+	text-align:center;
+	margin:150px 0 0;
+}
+
+.bbs_title {
+  margin: 100px 0;
+  text-align: center;
+  font-size: 30px;
+}
+
+.board_list {
+	width:100%;
+}
+.board_list .list_header {
+	display:flex;
+	align-items:center;
+	border-top:2px solid #333;
+	border-bottom:2px solid #333;
+}
+.board_list .list_content {
+	display:flex;
+	align-items:center;
+	border-bottom:1px solid #333;
+}
+.board_list .list_header span {
+	height:50px;
+	line-height:50px;
+}
+
+.board_list .list_content span {
+	height:45px;
+	line-height:45px;
+}
+
+
+.board_list span {
+	text-align:center;
+	display:block;
+}
+.board_list span.no {
+	width:10%;
+}
+.board_list span.title {
+	width:65%;
+}
+.board_list span.name {
+	width:10%;
+}
+.board_list span.date {
+	width:15%;
+}
+
+.write_btn a {
+	width:75px;
+	background:#000;
+	color:#fff;
+	text-align:center;
+	height:35px;
+	line-height:35px;
+	display:block;
+	margin:50px 0 0 auto;
+	font-size:15px;
+}
+.pageing {
+	margin-top:50px
+}
+.pageing ul {
+	display:flex;
+	justify-content:center;
+}
+.pageing ul li {
+	width:30px;
+	text-align:center;
+}

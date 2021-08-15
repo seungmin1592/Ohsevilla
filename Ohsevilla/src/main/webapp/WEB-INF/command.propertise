@@ -14,8 +14,12 @@
 /idCheck.do=member.command.IdCheckCommand
 
 
-
 /member/delete.do=member.command.DeleteCommand
 /member/deleteOk.do=member.command.DeleteOkCommand
+
+
+
+/bbs/noticeList.do=bbs.command.NoticeListCommand
+/bbs/noticeWrite.do=bbs.command.NoticeWriteCommand
 
 

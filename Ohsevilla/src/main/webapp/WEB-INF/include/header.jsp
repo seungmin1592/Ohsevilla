@@ -28,7 +28,7 @@
                          </div>
                     </li>
                     <li><a href="#">ARCHIVE</a></li>
-                    <li><a href="#none">STOCKIST</a></li>
+                    <li><a href="${root}/bbs/noticeList.do">NOTICE</a></li>
                </ul>
           </nav>
           <!--menu-->

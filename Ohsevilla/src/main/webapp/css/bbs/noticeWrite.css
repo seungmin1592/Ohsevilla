@@ -1,0 +1,78 @@
+.notice_write {
+	max-width:1000px;
+	width:100%;
+	margin:0 auto;
+}
+.notice_write .bbs_logo {
+	margin:150px 0 100px;
+}
+.board_write {
+	width:100%;
+	margin-bottom:200px;
+}
+.board_write .write_form {
+	width:100%;
+}
+.board_write .write_form > div {
+	height:40px;
+	line-height:40px;
+	display:flex;
+	margin-bottom:20px
+}
+.board_write .write_form > div .left {
+	width:20%;
+}
+.board_write .write_form > div span {
+	width:80%;
+	text-align:center;
+}
+.board_write .write_form span input{
+	width:100%; 
+	height:40px;
+	line-height:40px;
+	padding:0 10px;
+}
+
+.board_write .write_form > div.content {
+	height:200px;
+	line-height:200px;
+}
+.board_write .write_form > div.content textarea {
+	width:100%;
+	padding:15px;
+	height:100%;
+	resize:none;
+}
+
+.board_write .btn {
+	width:100%;
+	margin-top:100px;
+	padding:0 20%;
+	display:flex;
+	justify-content:space-between;;
+	
+}
+
+.board_write .btn input {
+	width:48%;
+	height:50px;
+	background:#fff;
+	color:#333;
+	cursor:pointer;
+	font-size:16px;
+	font-weight:600;
+	border:2px solid #333
+}
+.board_write .btn a {
+	width:48%;
+	height:50px;
+	background:#000;
+	color:#fff;
+	display:block;
+	text-align:center;
+	line-height:50px;
+	font-size:16px;
+	font-weight:600;
+}
+
+
