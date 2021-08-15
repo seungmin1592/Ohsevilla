@@ -25,15 +25,20 @@
 		$('#id').focusout(function(){
 			// ajax 비동기 통신 => id를 서버로 보내고 사용 가능 유무의 응답 코드를 받는다 => 화면에 메세지 출력
 			console.log('start');
+			var id = $(this).val();
+			console.log(id);
 			
 			$.ajax({
-				url : 'Oshevilla/member/idCheck.do',
+				url : '/Ohsevilla/member/idCheck.do',
 				type : 'post',
-				data : {id : $(this).val()},
+				data : {
+					'id':id
+					},
 				success : function(data){
 					console.log(data);
+					console.log(url);
 					// data : Y / N
-					if(check == 'Y'){
+					if(data == 'Y'){
 						$('#msg').html('사용가능');
 						$('#msg').addClass('color_blue');
 						$('#msg').removeClass('display_none');

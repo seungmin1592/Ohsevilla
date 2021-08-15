@@ -10,7 +10,8 @@
 /member/pwChkOK.do=member.command.PWCheckCommand
 /member/editMember.do=member.command.EditMemberCommand
 /member/editMemberOk.do=member.command.EditMemberOkCommand
-/member/idCheck.do=member.command.IdCheckCommand
+
+/idCheck.do=member.command.IdCheckCommand
 
 
 

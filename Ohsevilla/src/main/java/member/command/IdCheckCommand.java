@@ -15,6 +15,8 @@ public class IdCheckCommand implements Command {
 		
 		int check = MemberDAO.getInstance().idCheck(id);
 		System.out.println(check);
+		System.out.println(id);
+		
 		
 		return check > 0 ? "N" : "Y";
 	}
