@@ -10,6 +10,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="<%= request.getContextPath()%>/js/script.js"></script>
+    <script src="<%= request.getContextPath()%>/smarteditor2/js/HuskyEZCreator.js" charset="utf-8"></script>
 	<title>Ohsevilla</title>
 </head>
 <body>
@@ -34,7 +35,7 @@
 					<div class="content">
 						<span class="left">내용</span>
 						<span>
-							<textarea></textarea>
+							<textarea class="form-control" name="contents" id="contents"></textarea>
 						</span>
 					</div>
 				</div>
@@ -46,6 +47,16 @@
 
 	    </div>
 	</div>
+	<script>
+        var oEditors = [];
+
+        nhn.husky.EZCreator.createInIFrame({
+            oAppRef: oEditors,
+            elPlaceHolder: "contents",
+            sSkinURI: "/Ohsevilla/smarteditor2/SmartEditor2Skin.html",
+            fCreator: "createSEditor2"
+        });
+    </script>
 	
 	<%@ include file="/WEB-INF/include/footer.jsp" %>
 </body>

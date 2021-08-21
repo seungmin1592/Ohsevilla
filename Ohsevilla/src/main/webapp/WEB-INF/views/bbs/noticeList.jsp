@@ -32,13 +32,13 @@
 		            <span class="no">1</span>
 		            <span class="title">제목입니다.</span>
 		            <span class="name">김승민</span>
-		            <span class="date">210815</span>
+		            <span class="date">2021.08.15</span>
 	            </div>
 	            <div class="list_content">
 		            <span class="no">1</span>
 		            <span class="title">제목입니다.</span>
 		            <span class="name">김승민</span>
-		            <span class="date">210815</span>
+		            <span class="date">2021.08.15</span>
 	            </div>
             </div>
 	    </div>
