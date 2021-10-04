@@ -1,0 +1,69 @@
+.edit_section {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+.edit_title {
+  margin: 100px 0;
+  text-align: center;
+  font-size: 30px;
+}
+
+.edit_section form label {
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+}
+
+.edit_section form label > span {
+  color: red;
+}
+
+.edit_section form label > input {
+  width: 100%;
+  display: block;
+  padding: 5px 15px;
+  font-size: 15px;
+  border: 1px solid #d3d7df;
+  height: 50px;
+  line-height: 50px;
+  margin: 10px 0 40px;
+}
+
+.edit_section form label > #address_div input[type="text"] {
+	width:100%;
+	height:50px;
+	line-height:50px;
+	border:1px solid #d3d7df;
+	font-size:15px;
+	padding: 5px 15px;
+	margin:10px 0 0;
+}
+.edit_section form label > #address_div input[type="text"]:first-child {
+	width:62%
+}
+
+.edit_section form label > #address_div input[type="button"] {
+	width:35%;
+	padding:5px 15px;
+	font-size:15px;
+	height:50px;
+	border:1px solid #d3d7df;
+	margin:10px 0 0;
+	float:right;
+	cursor:pointer;
+}
+
+
+.edit_section .edit_btn {
+  width: 100%;
+  margin: 0 auto;
+  background: #000;
+  height: 60px;
+  color: #fff;
+  font-size: 20px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 100px 0;
+}
