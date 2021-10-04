@@ -1,0 +1,20 @@
+@charset "uft-8";
+@media (max-width:1250px){
+    .shop_in_title {
+        float:none;
+        width:100%;
+        top:0;
+        margin-top:40px;
+        background:#000;
+        height:30vh;
+        position: static;
+    }
+    .shop {
+        float:none;
+        width:100%;
+    }
+    .infor {
+        border:none;
+    }
+
+}
